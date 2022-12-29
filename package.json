@@ -1,0 +1,32 @@
+{
+  "name": "extension-type",
+  "version": "0.0.1",
+  "description": "extension type",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "test": "ts-mocha tests/**/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StreadChou/ExtensionType.git"
+  },
+  "keywords": [
+    "extensiontype"
+  ],
+  "author": "stread.chou@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StreadChou/ExtensionType/issues"
+  },
+  "homepage": "https://github.com/StreadChou/ExtensionType#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.1",
+    "chai": "^4.3.7",
+    "mocha": "^10.2.0",
+    "ts-mocha": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
