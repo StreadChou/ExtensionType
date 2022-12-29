@@ -13,10 +13,12 @@ Typescript扩展类型, 提供一些方便简单的扩展类型
 
 
 ### ListMultiMap
-
 ListMap方便在一个Array中再根据属性进行HashMap多重索引.  
 常见的例子: 在一场游戏中, 玩家存在于一个Array中,   
 但是有的时候又需要通过 id 来索引用户, 有的时候又要根据座位号 seat 索引. 来看看 ListMultiMap 的处理方式吧
+**注意: 因为Map的特性, 如果您添加了重复的Map, 会做覆盖处理**  
+**注意: 因为Map的特性, 如果您添加了重复的Map, 会做覆盖处理**  
+**注意: 因为Map的特性, 如果您添加了重复的Map, 会做覆盖处理**
 
 ````typescript
 class User {
@@ -83,10 +85,11 @@ listMultiMap.findIndex(()=>{})
 
 
 ### ListMap
-ListMap 是一个简化版本的 ListMultiMap, 只能进行一种索引 
-
+ListMap 是一个简化版本的 ListMultiMap, 只能进行一种索引
 常见的例子: 在一场游戏中, 玩家存在于一个Array中, 但是有的时候又需要通过 id 来索引用户,来看看ListMap如何使用
-
+**注意: 因为Map的特性, 如果您添加了重复的Map, 会做覆盖处理**  
+**注意: 因为Map的特性, 如果您添加了重复的Map, 会做覆盖处理**  
+**注意: 因为Map的特性, 如果您添加了重复的Map, 会做覆盖处理**
 ````typescript
 class User {
     uid: string
